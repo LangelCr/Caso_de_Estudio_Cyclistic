@@ -5,10 +5,10 @@ Análisis de datos de viajes en bicicleta de Cyclistic usando R. Limpieza, trans
 
 ## Estructura del proyecto
 
-├── data/ # Carpeta donde se colocan los archivos CSV de viajes
-├── script.R # Script principal con el análisis en R
-├── output/ # visualizaciones
-├── README.md # Documentación del proyecto
+- ├── data/ # Carpeta donde se colocan los archivos CSV de viajes
+- ├── script.R # Script principal con el análisis en R
+- ├── output/ # visualizaciones
+- ├── README.md # Documentación del proyecto
 
 
 ---
@@ -33,17 +33,14 @@ Análisis de datos de viajes en bicicleta de Cyclistic usando R. Limpieza, trans
 2. Abre `script.R` en **RStudio**.
 
 3. Asegúrate de tener instalados los paquetes necesarios. Ejecuta:
-
 install.packages(c("tidyverse", "lubridate", "janitor"))
+
+4. Edita la variable ruta en el script con la ruta local a tu carpeta /data:
 ruta <- "C:/Users/TU_USUARIO/RUTA/AL/PROYECTO/data"
 
-## Análisis realizado
-Duración promedio, mínima, máxima y mediana de viajes por tipo de usuario.
-Número de viajes por día de la semana y tipo de usuario.
-Duración promedio por día de la semana y tipo de usuario.
-Visualización de resultados con ggplot2.
+5. Ejecuta todo el script presionando Ctrl + A y luego Ctrl + Enter, o paso a paso si prefieres.
 
-El proceso de limpieza incluye:
+## 🧹 El proceso de limpieza incluye:
 
 - Unión de múltiples archivos .csv en un solo DataFrame.
 - Conversión de columnas a nombres estandarizados (snake_case).
@@ -53,7 +50,16 @@ El proceso de limpieza incluye:
 - Extracción de componentes de fecha: día, mes, año, y día de la semana.
 - Ordenación de los días para facilitar visualización y análisis.
 
-## Visualizaciones
+
+## 📊 Análisis realizado
+
+- Duración promedio, mínima, máxima y mediana de viajes por tipo de usuario.
+- Número de viajes por día de la semana y tipo de usuario.
+- Duración promedio por día de la semana y tipo de usuario.
+- Visualización de resultados con ggplot2.
+
+
+## 📈 Visualizaciones
 
 El script genera gráficos comparativos que permiten observar:
 
@@ -65,3 +71,12 @@ Estos gráficos permiten identificar diferencias clave en comportamiento entre m
 ![Rplot_numero_viajes](https://github.com/user-attachments/assets/23145a3c-01d0-418c-829f-c26739cb3301)
 ![Rplot_duracion_viaje](https://github.com/user-attachments/assets/d982f6d3-eb48-4fc0-a6a6-4c95332f79d2)
 
+
+## ✅ Conclusiones principales
+
+- Los usuarios casuales tienden a viajar más los fines de semana, mientras que los miembros anuales tienen un uso más constante durante la semana.
+- La duración de los viajes suele ser mayor en los usuarios casuales que en los miembros.
+- Estas diferencias son clave para enfocar estrategias de marketing o rediseño del servicio.
+
+## 📎 Licencia
+Este proyecto está disponible bajo la licencia MIT. Libre uso para fines educativos y no comerciales.
