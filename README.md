@@ -5,8 +5,8 @@ Análisis de datos de viajes en bicicleta de Cyclistic usando R. Limpieza, trans
 
 ## Estructura del proyecto
 
-- ├── data/ # Carpeta donde se colocan los archivos CSV de viajes
-- ├── script.R # Script principal con el análisis en R
+- ├── Estudio_caso_Cyclistic.pdf # Documentacion del proyecto
+- ├── R_script_eda.R # Script principal con el análisis en R
 - ├── output/ # visualizaciones
 - ├── README.md # Documentación del proyecto
 
